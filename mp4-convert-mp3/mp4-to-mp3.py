@@ -1,10 +1,10 @@
 import moviepy.editor
 from tkinter.filedialog import *
 
-vid = askopenfile()
+vid = askopenfilename()
 video = moviepy.editor.VideoFileClip(vid)
 
 aud = video.audio
-aud.write_audiofile('dmo.mp3')
+aud.write_audiofile('demo.mp3')
 
-print('Extracted audio from mp4 file successfully.')
+print('---End---')
