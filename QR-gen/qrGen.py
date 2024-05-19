@@ -1,7 +1,8 @@
 import qrcode
 
-img = qrcode.make(input('Enter u url'))
+img = qrcode.make('introduce')
 
-f = open(print('name ur file.png', 'wb'))
+f = open('output.png', 'wb')
 img.save(f)
+
 f.close()
